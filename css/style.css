@@ -1,0 +1,241 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBB;
+    padding:20px 0;
+
+}
+.box {
+    position:relative;
+    width:940px;
+    margin: 0 auto;
+
+}
+
+nav {
+    position: absolute;
+    top:110px;
+    right:0;
+}
+
+nav li {
+    display: inline;
+    margin:0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    color:#000000;
+    font-size: 22px;
+    transition: linear 400ms;
+}
+
+nav a:hover {
+    color:darkorange;
+    transition: linear 400ms;
+}
+
+.produtos {
+    width:940px;
+    margin: 0 auto;
+    padding:50px 0;
+}
+.produtos li {
+    display:inline-block;
+    text-align:center;
+    width:30%;
+    vertical-align: top;
+    margin:0 1.5%;
+    padding:30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius:10px;
+    transition: linear 400ms;
+}
+
+.produtos li:hover {
+    border-color:darkorange;
+    transition: linear 400ms;
+}
+
+.produtos li:active {
+    border-color:forestgreen;
+}
+
+.produtos li:hover h2 {
+    font-size:28px;
+    transition: linear 400ms;
+}
+
+.produtos h2 {
+    font-size:30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size:18px;    
+}
+
+.produto-preco {
+    font-size:22px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer {
+    background: url("../images/bg.jpg");
+    text-align:center;
+    padding: 10px 0;
+}
+
+.textorodape {
+    font-size:13px;
+    font-weight: bold;
+    color:#FFF;
+    margin:20px;
+}
+
+main {
+    width:940px;
+    margin:0 auto;
+}
+
+form {
+    margin:40px 0;
+}
+
+form label, 
+form legend {
+    display:block;
+    font-size:20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding:10px 25px;
+    width:50%;
+}
+
+.checkbox {
+    margin:20px 0;
+}
+
+.enviar {
+    width:40%;
+    border-radius:10px;
+    background-color:orange;
+    padding:15px;
+    color:#FFF;
+    font-weight: bold;
+    font-size:18px;
+    border:none;
+    transition: linear 400ms background;
+    cursor:pointer;
+}
+
+.enviar:hover {
+    background:orangered;
+}
+
+table {
+    margin:20px 0 40px;
+    margin-left:70px;
+}
+
+thead {
+    background: #555;
+    color:#FFF;
+    font-weight: bold;
+}
+
+td,
+th {
+    border:1px solid #000;
+    padding: 8px 15px;
+    background: #555;
+    color:#FFF;
+}
+
+@media screen and (max-width:480px) {
+    .box  {
+        width:auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .produtos li {
+        margin-top: 10px;
+    }
+
+    
+
+    .input-padrao, form label {
+        margin: 10px 0;
+        width: 40%;
+        margin-left: 15px;
+    }
+
+    #msg {
+        width: 45%;
+        margin-left: 15px;
+    }
+
+    fieldset {
+       margin-left:45px;
+    }
+
+    #radio-email, #radio-telefone, #radio-whatsapp {
+        margin-left: 100px;
+    }
+
+    select {
+        margin-left:120px;
+        height:30px;
+        border:1px solid black;
+        border-radius: 5px;
+        background-color: #555;
+        width: 70px;
+        color:#FFF;
+    }
+
+    .checkbox {
+        margin-left: 40px;
+        font-size: 18px;
+    }
+
+    .enviar {
+        margin-left:45px;
+    }
+
+    table {
+        margin-left: 90px;
+    }
+    
+
+
+
+
+
+
+
+}
+
